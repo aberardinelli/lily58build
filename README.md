@@ -81,7 +81,7 @@ If you will be socketing the OLED display, solder the 4-pin socket in at this ti
 
 I will say "ProMicro" throughout this section, but you could use Elite-C controllers and follow the exact same process.
 
-First, I recommend flashing your firmware to each ProMicro to verify that they both work.  You don't want to solder and install faulty controllers and only find out when the build is completely finished!
+First, I recommend [flashing your firmware](#firmware) to each ProMicro to verify that they both work.  You don't want to solder and install faulty controllers and only find out when the build is completely finished!
 
 After verifying that both ProMicros work, you can install them by following these steps:
 * Insert two 12-pin sockets (pin-side down) on the top (taped) side of each PCB. Be careful to insert into the line of pins that are in the outlined box on the top, not the line of pins that are outside of the outlined box.
@@ -138,7 +138,7 @@ Plug a USB micro cable into the left side PCB, and the other end of the cable in
 
 If you already flashed your firmware as suggested in step 6 above, you are ready to go!  If you haven't flashed your firmware yet, or you skipped down here to figure out how to flash firmware as part of step 6, read on.
 
-## Firmware flashing and customization
+## Firmware flashing and customization <a name="firmware"></a>
 
 ProMicro and Elite-C controllers are both QMK compatible, and the default keymap for the Lily58 Pro is included in the QMK repository.  If you've never used QMK before, you should [start here](https://docs.qmk.fm/#/newbs).
 
