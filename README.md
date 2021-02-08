@@ -19,7 +19,7 @@ I bought a kit secondhand through r/mechmarket that came with the items below.  
 
 ## Bought separately
 
-I bought the pins from Digikey and the sockets from Little Keyboards. The other pieces are standard and easy to find.
+I bought the pins from [Digikey](https://www.digikey.com/en/products/detail/3320-0-00-15-00-00-03-0/ED1134-ND/4147392) and the sockets from [Little Keyboards](https://www.littlekeyboards.com/collections/miscellaneous/products/mill-max-ultra-low-profile-sockets). The other pieces are standard and easy to find.
 
 * microUSB cable
 * 58 switches, keycaps
@@ -55,7 +55,7 @@ The sockets will also be soldered to the bottom (untaped) side of each PCB.
 
 If you are using Kailh sockets, you will use the socket outline oriented at the top of each switch's space (the soldered pieces in the picture below).  If you are using choc sockets, you will use the socket outline oriented at the bottom of each switches space (the unused outline space shown in the picture below).
 
-**insert picture here**
+![Hotswap sockets installed on Lily58 PCB](images/hotswap.jpg)
 
 Use the same approach to solder the hotswap sockets as you did for the SMD diodes: pre-apply solder to one side, place the socket on the PCB, melt the solder to attach the first side of the socket, then apply solder to the other side to fully attach the component.
 
@@ -65,13 +65,13 @@ Double check that each hotswap socket is firmly in place. Remember you will be p
 
 Each PCB will get one TRRS jack and one reset switch installed on the top (taped) side of the PCB, in the upper inner corner.
 
-**insert picture here**
+![Front of Lily58 PCB with TRRS jack and reset switch](images/TRRS_reset.jpg)
 
 Place each component, hold in place with masking/washi tape if necessary, turn the PCBs over, and solder in place.  Each TRRS jack should have 4 pins to solder and each reset switch should have 2 pins to solder.
 
 # Step 5: Prep the OLED display
 
-At the end of the Lily58 logo on the top (taped) side each PCB, there are four jumper terminals.  Apply solder to bride each pair.
+At the end of the Lily58 logo on the top (taped) side each PCB, there are four jumper terminals.  Apply solder to bridge each pair.
 
 **insert picture here (not taken yet)**
 
@@ -90,7 +90,7 @@ After verifying that both ProMicros work, you can install them by following thes
 * Insert the pins (standalone Mill-Max pins or leftover through-hole diode wires or leftover 3mm LED wires) into each hole on the ProMicro.
 * Press each pin firmly into the socket.
 
-**insert picture here**
+![Pins pressed into ProMicro and sockets](images/promicro_pins.jpg)
 
 * Solder each pin to the ProMicro.
 * Pull the ProMicro out of the sockets, remove the tape. Press the ProMicro back into the sockets.
@@ -99,7 +99,7 @@ After verifying that both ProMicros work, you can install them by following thes
 
 First attach the spacers to the top of the PCB by inserting a screw through the bottom of the board.
 
-**insert picture here**
+![Spacers on Lily58 PCB](images/acrylic_spacers.jpg)
 
 Then insert the OLED display over top of the ProMicro and solder appropriately:
 * If socketing the OLED display, remove (desolder) the pins that are pre-installed. Then insert 4 pins through the holes on the display into the sockets.  Solder these pins to the top of the OLED display. Ensure they fit snugly in the sockets.
@@ -122,7 +122,13 @@ You're almost there!
 * Screw the bottom layer into the other side of the 5 spacers on each PCB.  Place rubber feet if you have them.
 * Place your keycaps.
 
-**insert 3 images here**
+![Top view of finished Lily58](images/finished_top_view.jpg "Right side of finished Lily58 build, viewed from the top")
+
+![Side view of finished Lily58](images/finished_side_view.jpg "Right side of finished Lily58 build, viewed from the side")
+
+![Bottom view of finished Lily58](images/finished_bottom_view.jpg "Right side of finished Lily58 build, viewed from the bottom")
+
+
 
 # Usage and customization
 
