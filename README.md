@@ -1,3 +1,9 @@
+# Lily58 Pro Build Guide
+
+Written: February 2021
+
+Last Updated: February 2021
+
 # Materials Needed
 
 ## Came with kit
@@ -55,6 +61,7 @@ The sockets will also be soldered to the bottom (untaped) side of each PCB.
 
 If you are using Kailh sockets, you will use the socket outline oriented at the top of each switch's space (the soldered pieces in the picture below).  If you are using choc sockets, you will use the socket outline oriented at the bottom of each switches space (the unused outline space shown in the picture below).
 
+*FYI: The soldering work on the components in the top left corner of the picture below is from future steps.*
 ![Hotswap sockets installed on Lily58 PCB](images/hotswap.jpg)
 
 Use the same approach to solder the hotswap sockets as you did for the SMD diodes: pre-apply solder to one side, place the socket on the PCB, melt the solder to attach the first side of the socket, then apply solder to the other side to fully attach the component.
@@ -65,13 +72,14 @@ Double check that each hotswap socket is firmly in place. Remember you will be p
 
 Each PCB will get one TRRS jack and one reset switch installed on the top (taped) side of the PCB, in the upper inner corner.
 
+*Note: The pins (and sockets, under the blue tape) shown to the left of the TRRS jack and reset switch in the image below were added in a future step.*
 ![Front of Lily58 PCB with TRRS jack and reset switch](images/TRRS_reset.jpg)
 
 Place each component, hold in place with masking/washi tape if necessary, turn the PCBs over, and solder in place.  Each TRRS jack should have 4 pins to solder and each reset switch should have 2 pins to solder.
 
 # Step 5: Prep the OLED display
 
-At the end of the Lily58 logo on the top (taped) side each PCB, there are four jumper terminals.  Apply solder to bridge each pair.
+At the end of the Lily58 logo on the top (taped) side each PCB, there are four jumper terminals.  Apply solder to bridge each pair, shown in the top of the circled area in the image below.
 
 ![Four jumper terminals to be bridged](images/bridges.jpg)
 
@@ -95,7 +103,7 @@ After verifying that both ProMicros work, you can install them by following thes
 
 ![Pins pressed into ProMicro and sockets](images/promicro_pins.jpg)
 
-* Solder each pin to the ProMicro.
+* Solder each pin to the ProMicro.  If you used leftover wires from other components, you will want to cut the excess wire off (close to the solder joint).
 * Pull the ProMicro out of the sockets, remove the tape. Press the ProMicro back into the sockets.
 
 # Step 7: Install the OLED screens
@@ -137,7 +145,7 @@ You're almost there!
 
 Plug each side of a TRRS cable into the PCBs.
 
-Plug a USB micro cable into the left side PCB, and the other end of the cable into your device.
+Plug a USB micro cable into the left side PCB, and the other end of the cable into your device. (If you want to plug the USB cable into the right side instead, see the section below about firmware changes.)
 
 If you already flashed your firmware as suggested in step 6 above, you are ready to go!  If you haven't flashed your firmware yet, or you skipped down here to figure out how to flash firmware as part of step 6, read on.
 
@@ -170,7 +178,11 @@ mkdir custom_example
 cp default/* custom_example/
 ```
 
-Now edit `custom_example/keymap.c` as you like using the [QMK keycodes](https://docs.qmk.fm/#/keycodes).  When you're ready, compile and flash:
+Now edit `custom_example/keymap.c` as you like using the [QMK keycodes](https://docs.qmk.fm/#/keycodes).  
+
+As noted above, if you want to plug your USB cable into the right side instead of the (default) left side, you'll also need to edit one line in `config.h` in your `custom_example` folder. Change `#define MASTER_LEFT` to `#define MASTER_RIGHT`.
+
+When you're ready, compile and flash:
 
 ```
 qmk compile -kb lily58 -km custom_example
