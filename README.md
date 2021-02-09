@@ -73,7 +73,7 @@ Place each component, hold in place with masking/washi tape if necessary, turn t
 
 At the end of the Lily58 logo on the top (taped) side each PCB, there are four jumper terminals.  Apply solder to bridge each pair.
 
-**insert picture here (not taken yet)**
+![Four jumper terminals to be bridged](images/bridges.jpg)
 
 If you will be socketing the OLED display, solder the 4-pin socket in at this time as well, right below the four bridges you just created. (For more details about socketing, apply the bullet point instructions in the next step to the 4-pins of the OLED displays.) If you will be soldering the OLED display directly, you can skip this for now.
 
@@ -84,7 +84,10 @@ I will say "ProMicro" throughout this section, but you could use Elite-C control
 First, I recommend [flashing your firmware](#firmware) to each ProMicro to verify that they both work.  You don't want to solder and install faulty controllers and only find out when the build is completely finished!
 
 After verifying that both ProMicros work, you can install them by following these steps:
-* Insert two 12-pin sockets (pin-side down) on the top (taped) side of each PCB. Be careful to insert into the line of pins that are in the outlined box on the top, not the line of pins that are outside of the outlined box.
+* Insert two 12-pin sockets (pin-side down) on the top (taped) side of each PCB. Be careful to insert into the line of pins that are in the outlined box on the top. Note in the image below, showing the view from the top of the PCB, that the sockets are over top of the outlined box and the holes to the left of the outlined box (when viewed from the top) are not in use.
+
+![Location to insert ProMicro sockets](images/promicro_sockets.jpg)
+
 * Tape the sockets in place with masking/washi tape.  Turn the PCBs over and solder the socket pins in place on the bottom (untaped) side.
 * Turn the PCBs back over (top side up).  Place the ProMicro over the sockets, with the controller and other components facing down. Leave the tape on the sockets, so you don't accidentally flow solder from the ProMicro to the sockets.
 * Insert the pins (standalone Mill-Max pins or leftover through-hole diode wires or leftover 3mm LED wires) into each hole on the ProMicro.
