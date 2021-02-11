@@ -116,6 +116,8 @@ Then insert the OLED display over top of the ProMicro and solder appropriately:
 * If socketing the OLED display, remove (desolder) the pins that are pre-installed. Then insert 4 pins through the holes on the display into the sockets.  Solder these pins to the top of the OLED display. Ensure they fit snugly in the sockets.
 * If **not** socketing the OLED display, carefully place it over the ProMicro and insert the 4 pins that are pre-soldered to the display through the holes on the PCB. Turn the PCB over and solder those pins to the board.
 
+![OLED screen after installing and soldering](images/OLED.jpg)
+
 At this point, you can remove the tape you were using to tell the difference between the top and bottom of the PCBs if you haven't already done so.
 
 # Step 8: Install the spacers and align the layers
@@ -123,6 +125,8 @@ At this point, you can remove the tape you were using to tell the difference bet
 For each PCB, there are 5 spacers.  Take the plates (the pieces with the cutouts for the keys) and place the spacers on the bottom side of each plate.  Attach them with screws inserted into the top side of each plate.
 
 Next insert a few switches into the top of each plate.  Align each plate to the PCB.  Carefully ensure the spacers fit through the large holes in the PCB and the switch pins fit into the hotswap sockets.
+
+![Switches in the corners, aligned into the plate and PCB](images/switches.jpg)
 
 # Step 9: Complete the build
 
